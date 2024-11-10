@@ -35,7 +35,7 @@ const About = () => {
         <h2>About Me</h2>
         <div className={styles.content}>
           <p className={styles.mainText}>
-            Hi! I'm Arfa Shoaib, a passionate Front-End Developer with a keen eye for creating 
+            Hi! I&apos;m Arfa Shoaib, a passionate Front-End Developer with a keen eye for creating 
             beautiful and functional web experiences. With expertise in modern web technologies, 
             I transform ideas into reality through clean and efficient code.
           </p>
