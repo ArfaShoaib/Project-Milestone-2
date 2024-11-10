@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div>
       <Image
-            src={"/vector.png"}
+            src={"/Vector.png"}
             alt="About Me"
             width={500}
             height={500}
