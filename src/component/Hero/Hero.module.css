@@ -1,0 +1,236 @@
+/* Hero.module.css */
+@keyframes gradientText {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* Main container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  position: relative;
+}
+
+.leftSide {
+  flex: 1;
+  min-width: 300px;
+  padding: 2rem;
+}
+
+.leftSide h1 {
+ 
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 49px;
+  line-height: 1.2;
+  background: linear-gradient(
+    300deg,
+    #2d2d2d,
+    #666666,
+    #2d2d2d,
+    #444444,
+    #2d2d2d
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gradientText 8s ease infinite,
+             float 3s ease-in-out infinite;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.leftSide h1:hover {
+  transform: scale(1.02);
+}
+
+.leftSide p {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 65px;
+  opacity: 0.9;
+}
+
+.rightSide {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightSide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  position: absolute;
+  bottom: 12rem;
+  left: 10%;
+
+  
+  transform: translateX(-50%);
+}
+
+.button button {
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  background: #FDC435;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  left: 15%;
+  position: relative;
+  top: 55%;
+}
+
+.button button:hover {
+  background: #FDC435;
+  transform: translateY(-2px);
+}
+
+/* Hover के बाद click effect */
+.button button:active {
+  transform: translateY(-1px);
+}
+/* Large Screens */
+@media (min-width: 1421px) {
+  .container {
+    max-width: 1432px;
+    margin: 0 auto;
+  }
+  .button button{
+    position: relative;
+    top:90%;
+   }
+}
+
+/* Desktop & Laptop */
+@media (max-width: 1200px) {
+  .leftSide h1 {
+    font-size: 4.5rem;
+  }
+
+  .rightSide img {
+    margin-left: 40%;
+  }
+
+  .button {
+   display: none;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .container {
+    padding: 40px;
+    gap: 20px;
+  }
+
+  .leftSide h1 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+  }
+
+  .leftSide p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .rightSide img {
+    margin-left: 20%;
+    margin-bottom: 15%;
+  }
+
+  .button {
+    margin-top: 200px;
+    left: -80%;
+  }
+}
+
+/* Large Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse; /* Image will appear first */
+    text-align: center;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .leftSide {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .leftSide h1 {
+    font-size: 2.2rem;
+    margin-top: 0; /* Reset margin */
+    margin-bottom: 20px;
+  }
+
+  .rightSide {
+    width: 100%;
+  }
+
+  .rightSide img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto; /* Center the image */
+    max-width: 400px;
+  }
+
+  .button {
+    margin-top: 10px;
+    position: relative;
+    
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .leftSide h1 {
+    font-size: 1.8rem;
+  }
+
+  .leftSide p {
+    font-size: 1rem;
+  }
+
+  .rightSide img {
+    width: 90%;
+  }
+
+  .button button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
