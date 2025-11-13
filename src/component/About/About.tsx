@@ -43,7 +43,6 @@ const About = () => {
           <div className={styles.skillsSection}>
             <h3>My Skills</h3>
             <div className={styles.skills}>
-              <span>React</span>
               <span>Next.js</span>
               <span>JavaScript</span>
               <span>TypeScript</span>

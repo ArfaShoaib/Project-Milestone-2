@@ -36,7 +36,9 @@ const Project = () => {
           />
         </div>
         <div className={style.rightside}>
-          <h1 className={style.projecttitle}>Static And Dynamic Editable Resume</h1>
+          <h1 className={style.projecttitle}>
+            Static And Dynamic Editable Resume
+          </h1>
           <p className={style.description}>
             Dynamic Resume Building With HTML,CSS,TYPESCRIPT/JAVASCRIPT.
           </p>
@@ -49,7 +51,10 @@ const Project = () => {
             <Link href="https://mileston-3-sigma.vercel.app/" target="_blank">
               <button className={style.liveBtn}>Live Demo</button>
             </Link>
-            <Link href="https://github.com/ArfaShoaib/HACKATHONS" target="_blank">
+            <Link
+              href="https://github.com/ArfaShoaib/HACKATHONS"
+              target="_blank"
+            >
               <button className={style.codeBtn}>View Code</button>
             </Link>
           </div>
@@ -79,7 +84,10 @@ const Project = () => {
             <Link href="https://assigment-nextjs-3.vercel.app/" target="_blank">
               <button className={style.liveBtn}>Live Demo</button>
             </Link>
-            <Link href="https://github.com/ArfaShoaib/ASSIGMENT-NEXTJS-3" target="_blank">
+            <Link
+              href="https://github.com/ArfaShoaib/ASSIGMENT-NEXTJS-3"
+              target="_blank"
+            >
               <button className={style.codeBtn}>View Code</button>
             </Link>
           </div>
@@ -106,10 +114,16 @@ const Project = () => {
             <span>Bootstrap</span>
           </div>
           <div className={style.buttons}>
-            <Link href="https://portfolio-kappa-hazel-11.vercel.app/" target="_blank">
+            <Link
+              href="https://portfolio-kappa-hazel-11.vercel.app/"
+              target="_blank"
+            >
               <button className={style.liveBtn}>Live Demo</button>
             </Link>
-            <Link href="https://github.com/ArfaShoaib/PORTFOLIO" target="_blank">
+            <Link
+              href="https://github.com/ArfaShoaib/PORTFOLIO"
+              target="_blank"
+            >
               <button className={style.codeBtn}>View Code</button>
             </Link>
           </div>
@@ -135,10 +149,16 @@ const Project = () => {
             <span>TailwindCSS</span>
           </div>
           <div className={style.buttons}>
-            <Link href="https://portfolio-2-swart-nine.vercel.app/" target="_blank">
+            <Link
+              href="https://portfolio-2-swart-nine.vercel.app/"
+              target="_blank"
+            >
               <button className={style.liveBtn}>Live Demo</button>
             </Link>
-            <Link href="https://github.com/ArfaShoaib/PORTFOLIO2" target="_blank">
+            <Link
+              href="https://github.com/ArfaShoaib/PORTFOLIO2"
+              target="_blank"
+            >
               <button className={style.codeBtn}>View Code</button>
             </Link>
           </div>
@@ -164,15 +184,91 @@ const Project = () => {
             <span>Figma</span>
           </div>
           <div className={style.buttons}>
-            <Link href="https://assignment-5-next-js.vercel.app/" target="_blank">
+            <Link
+              href="https://assignment-5-next-js.vercel.app/"
+              target="_blank"
+            >
               <button className={style.liveBtn}>Live Demo</button>
             </Link>
-            <Link href="https://github.com/ArfaShoaib/Assignment-5-Next.js" target="_blank">
+            <Link
+              href="https://github.com/ArfaShoaib/Assignment-5-Next.js"
+              target="_blank"
+            >
+              <button className={style.codeBtn}>View Code</button>
+            </Link>
+          </div>
+        </div>
+        {/* Project 5 */}
+        <div className={style.leftside}>
+          <Image
+            src="/landingpage.png"
+            alt="Project 4 Image"
+            width={500}
+            height={300}
+            className={style.projectImage}
+          />
+        </div>
+        <div className={style.rightside}>
+          <h1 className={style.projecttitle}>Landing Page</h1>
+          <p className={style.description}>
+            Stunning Landing Page For Business , Startups
+          </p>
+          <div className={style.techStack}>
+            <span>Next.js</span>
+            <span>TailwindCSS</span>
+            <span>Framer Motion</span>
+          </div>
+          <div className={style.buttons}>
+            <Link
+              href="https://landing-page-two-ashen-52.vercel.app/"
+              target="_blank"
+            >
+              <button className={style.liveBtn}>Live Demo</button>
+            </Link>
+            <Link
+              href="https://github.com/ArfaShoaib/landing_page"
+              target="_blank"
+            >
+              <button className={style.codeBtn}>View Code</button>
+            </Link>
+          </div>
+        </div>
+        {/* Project 6 */}
+        <div className={style.leftside}>
+          <Image
+            src="/gymwebsite.png"
+            alt="Project 4 Image"
+            width={500}
+            height={300}
+            className={style.projectImage}
+          />
+        </div>
+        <div className={style.rightside}>
+          <h1 className={style.projecttitle}>Gym Website</h1>
+          <p className={style.description}>
+            Developer Website For Gym 
+          </p>
+          <div className={style.techStack}>
+            <span>Next.js</span>
+            <span>TailwindCSS</span>
+          </div>
+          <div className={style.buttons}>
+            <Link
+              href="https://gym-website-3ef7.vercel.app/"
+              target="_blank"
+            >
+              <button className={style.liveBtn}>Live Demo</button>
+            </Link>
+            <Link
+              href="https://github.com/ArfaShoaib/gym_website"
+              target="_blank"
+            >
               <button className={style.codeBtn}>View Code</button>
             </Link>
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
