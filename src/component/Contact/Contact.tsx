@@ -10,8 +10,10 @@ const Contact = () => {
           <h1 className={styles.title}>Contact Me</h1>
           <p className={styles.subtitle}>Feel Free To Contact Me.</p>
         </div>
+
         <div className={styles.formContainer}>
           <div className={styles.formGrid}>
+            {/* Name */}
             <div className={styles.formGroup}>
               <div className={styles.inputContainer}>
                 <label htmlFor="name" className={styles.label}>
@@ -25,6 +27,8 @@ const Contact = () => {
                 />
               </div>
             </div>
+
+            {/* Email */}
             <div className={styles.formGroup}>
               <div className={styles.inputContainer}>
                 <label htmlFor="email" className={styles.label}>
@@ -38,6 +42,8 @@ const Contact = () => {
                 />
               </div>
             </div>
+
+            {/* Message */}
             <div className={styles.formGroupFull}>
               <div className={styles.inputContainer}>
                 <label htmlFor="message" className={styles.label}>
@@ -52,18 +58,34 @@ const Contact = () => {
                 ></textarea>
               </div>
             </div>
+
+            {/* Button */}
             <div className={styles.buttonContainer}>
               <button className={styles.button}>Send Message</button>
             </div>
+
+            {/* Contact Info */}
             <div className={styles.contactInfo}>
-              <a className={styles.email}>example@email.com</a>
+              <a href="mailto:arfa67264@gmail.com" className={styles.email}>
+                arfa67264@gmail.com
+              </a>
               <p className={styles.address}>
-                49 Smith St.
+                Karachi, Pakistan
                 <br />
-                Saint Cloud, MN 56301
+                <a href="tel:+923242303069" className={styles.phone}>
+                  +92 324 2303069
+                </a>
               </p>
+
+              {/* Social Links */}
               <span className={styles.socialLinks}>
-                <a className={styles.socialLink}>
+                {/* Facebook */}
+                <a
+                  href="https://www.facebook.com/profile.php?id=61583071799239"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                >
                   <svg
                     fill="currentColor"
                     strokeLinecap="round"
@@ -75,7 +97,14 @@ const Contact = () => {
                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
                   </svg>
                 </a>
-                <a className={styles.socialLink}>
+
+                {/* Twitter */}
+                <a
+                  href="https://x.com/ArfaShoaib1984"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                >
                   <svg
                     fill="currentColor"
                     strokeLinecap="round"
@@ -87,7 +116,14 @@ const Contact = () => {
                     <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
                   </svg>
                 </a>
-                <a className={styles.socialLink}>
+
+                {/* Instagram */}
+                <a
+                  href="https://www.instagram.com/arfa_dev_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                >
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -101,7 +137,35 @@ const Contact = () => {
                     <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
                   </svg>
                 </a>
-                <a className={styles.socialLink}>
+
+                {/* LinkedIn */}
+                <a
+                  href="https://www.linkedin.com/in/arfa-shoaib-4992292b7/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                >
+                  <svg
+                    fill="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    className={styles.icon}
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </a>
+
+                {/* WhatsApp */}
+                <a
+                  href="https://wa.me/923242303069"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                >
                   <svg
                     fill="currentColor"
                     strokeLinecap="round"
